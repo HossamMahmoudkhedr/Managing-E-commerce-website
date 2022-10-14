@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap");
+:root {
+  --red-color: #eb4d11;
+  --medium-red: #ff6d6a;
+  --light-red: #fe918f;
+  --very-light-red: #fdb7b6;
+  --text-color: #002f5d;
+  --gray-color: #7992aa;
+  --light-gray: #f5f6f8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: "Cairo", sans-serif; */
+  /* font-family: "Changa", sans-serif; */
+  font-family: "Baloo Bhaijaan 2", cursive;
+  color: var(--text-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  direction: rtl;
+  -webkit-locale: "ar";
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.App .container {
+  padding: 0px 167px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  gap: 8.5rem;
+  margin-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.special {
+  color: var(--red-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.info {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-gray);
+  padding: 2rem 6rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+
+.info .text {
+  font-weight: 700;
+}
+
+.info .btn {
+  font-size: 1rem;
+}
+
+@media (max-width: 786px) {
+  .App .container {
+    padding: 0px 6px;
+    gap: 7.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  .info {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 2rem;
+    gap: 1rem;
+  }
+  .info .btn {
+    padding: 0.5rem;
+    font-weight: 800;
   }
 }

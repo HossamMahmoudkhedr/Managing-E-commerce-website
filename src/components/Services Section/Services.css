@@ -1,0 +1,78 @@
+.services {
+  padding: 0rem 5rem;
+}
+.services h3 {
+  font-weight: 500;
+}
+
+.services .serv-cont {
+  display: grid;
+  column-gap: 7.5rem;
+  row-gap: 4rem;
+  margin-top: 0.1rem;
+  padding: 1.3rem;
+  position: relative;
+}
+.services .serv-cont img {
+  width: 150%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: -244px;
+  opacity: 0.2;
+}
+.services .serv-cont .serv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.services .serv-cont .serv h4 {
+  color: var(--red-color);
+}
+
+.services .serv-cont .serv p {
+  font-weight: 600;
+  font-size: 13px;
+}
+.services .serv-cont .serv .ic {
+  padding: 1.2rem;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  border-radius: 30%;
+}
+
+.services .serv-cont .serv .ic svg {
+  transform: scale(1.7);
+}
+
+@media (min-width: 1300px) {
+  .services .serv-cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .services .serv-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 0 3rem;
+  }
+  .services .serv-cont .serv {
+    align-items: center;
+    text-align: center;
+  }
+  .services h2 {
+    margin-bottom: 1.5rem;
+  }
+}

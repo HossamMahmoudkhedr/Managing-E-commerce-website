@@ -1,0 +1,161 @@
+.customers {
+  padding: 0rem 5rem;
+}
+
+.customers .reviews {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* .reviews > :nth-child(1) {
+  transform: translateX(0);
+  position: unset;
+} */
+
+.reviews > :nth-child(2) {
+  position: absolute;
+  transform: translateX(-100%);
+}
+.reviews .review.active {
+  transform: translateX(0);
+  position: unset;
+}
+.reviews .review.first {
+  transform: translateX(0);
+  position: unset;
+}
+.reviews .review.hide {
+  position: absolute;
+  transform: translateX(-100%);
+}
+.reviews .review.second {
+  position: absolute;
+  transform: translateX(-100%);
+}
+.reviews .review.back {
+  position: absolute;
+  transform: translateX(100%);
+}
+.review .review.hide {
+  transform: translateX(150%);
+  position: absolute;
+}
+
+.customers .reviews .review {
+  display: flex;
+  padding: 1rem 0;
+  gap: 13rem;
+  transition: all 0.7s linear;
+}
+
+.review .right-image {
+  flex: 1.5 1;
+  position: relative;
+}
+.review .right-image > :nth-child(1) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right-image div {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+}
+.right-image div img {
+  transform: rotate(180deg);
+}
+.right-image .customerImg {
+  width: 100%;
+}
+
+.review .left-text {
+  flex: 1 1;
+}
+
+.review .left-text div img {
+  transform: rotate(180deg);
+  width: 30px;
+}
+.customers .arrows #right {
+  transform: rotate(180deg);
+  color: var(--red-color);
+}
+
+.customers .arrows {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.customers .arrows svg path {
+  color: var(--red-color);
+}
+.customers #right.active path,
+.customers #left.active path {
+  color: #fff;
+}
+.customers #right.active:hover path,
+.customers #left.active:hover path {
+  color: var(--text-color);
+}
+.customers .arrows svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+.customers .arrows #circle {
+  content: "";
+  position: absolute;
+  right: -1px;
+  z-index: -1;
+  background-color: var(--red-color);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: all 0.6s linear;
+  border: 1px solid var(--text-color);
+}
+
+.customers .arrows #circle.move {
+  right: 26.5px;
+}
+
+.left-text .stars {
+  display: flex;
+  gap: 0.4rem;
+}
+.left-text .stars svg path {
+  color: orange;
+}
+
+.left-text div h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.left-text .opinion {
+  margin: 1rem 0 2rem 0;
+}
+
+@media (max-width: 786px) {
+  .customers {
+    padding: 0rem 3rem;
+  }
+  .customers .reviews {
+    flex-direction: column;
+  }
+  .customers .reviews .review {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .right-image div img {
+    display: none;
+  }
+  .left-text div h3 {
+    font-size: 1.6rem;
+  }
+}
