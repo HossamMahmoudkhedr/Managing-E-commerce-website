@@ -67,3 +67,9 @@
     display: block;
   }
 }
+
+@media (max-width: 786px) {
+  .footer {
+    padding: 3rem 0rem;
+  }
+}
