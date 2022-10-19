@@ -27,14 +27,14 @@ const Navbar = () => {
          </div>
         <div className={`left ${classi}`}>
               <ul className="links">
-                  <li><a href="/" className='active'>الصفحة الرئيسية</a></li>
-                  <li><a href="/">عن سمة</a></li>
-                  <li><a href="/">الأسعار</a></li>
-                  <li><a href="/">المدونة</a></li>
+                  <li><a href="#" className='active'>الصفحة الرئيسية</a></li>
+                  <li><a href="#">عن سمة</a></li>
+                  <li><a href="#">الأسعار</a></li>
+                  <li><a href="#">المدونة</a></li>
               </ul>
               <div className="reg">
-                <a href="/">اتصل بنا</a>
-                <a href="/" className='btn'>اشترك الان</a>
+                <a href="#">اتصل بنا</a>
+                <a href="#" className='btn'>اشترك الان</a>
               </div>
           </div>
     </nav>
