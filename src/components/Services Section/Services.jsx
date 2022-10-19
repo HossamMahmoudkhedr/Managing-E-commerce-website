@@ -42,7 +42,7 @@ const Services = () => {
                          لرؤية جميع <span className="special">الخدمات</span> ومعرفة اسعارنا بشكل تفصيلي.
                   </div>
               </div>
-              <a href="/" className="btn">اشترك الان مجانا</a>
+              <a href="#" className="btn">اشترك الان مجانا</a>
           </div>
     </div>
   )

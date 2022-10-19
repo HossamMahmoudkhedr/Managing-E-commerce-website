@@ -20,7 +20,7 @@ const TopPage = () => {
                     <div className="moreInfo">
                         <span><div><BsFillPlayFill /></div>كيف نعمل</span>
                         <IoIosArrowBack />
-                        <a href="/">لمعرفة المزيد</a>
+                        <a href="#">لمعرفة المزيد</a>
                     </div>
                 </div>
                 <div className="left">
