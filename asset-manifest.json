@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Managing-E-commerce-website/static/css/main.e594fa87.css",
-    "main.js": "/Managing-E-commerce-website/static/js/main.d2eb26f0.js",
+    "main.js": "/Managing-E-commerce-website/static/js/main.6dfd2040.js",
     "static/media/5100169-1536x1536.jpg": "/Managing-E-commerce-website/static/media/5100169-1536x1536.8ca91c0870103555136e.jpg",
     "index.html": "/Managing-E-commerce-website/index.html",
     "static/media/quote-right.svg": "/Managing-E-commerce-website/static/media/quote-right.b19b76c8602da08f6e484d82e1d99705.svg",
     "static/media/comment.svg": "/Managing-E-commerce-website/static/media/comment.50711facb6f3c9377391ca721bd42fb3.svg",
     "main.e594fa87.css.map": "/Managing-E-commerce-website/static/css/main.e594fa87.css.map",
-    "main.d2eb26f0.js.map": "/Managing-E-commerce-website/static/js/main.d2eb26f0.js.map"
+    "main.6dfd2040.js.map": "/Managing-E-commerce-website/static/js/main.6dfd2040.js.map"
   },
   "entrypoints": [
     "static/css/main.e594fa87.css",
-    "static/js/main.d2eb26f0.js"
+    "static/js/main.6dfd2040.js"
   ]
 }
